@@ -72,7 +72,7 @@ class NeonImporter(beangulp.Importer):
                     date=post_date,
                     flag=flags.FLAG_OKAY,
                     payee=payee,
-                    narration=narration,
+                    narration=payee,
                     tags=data.EMPTY_SET,
                     links=data.EMPTY_SET,
                     postings=[
