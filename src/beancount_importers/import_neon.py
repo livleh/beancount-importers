@@ -96,7 +96,7 @@ class NeonImporter(beangulp.Importer):
                     elif "Referral reward" in comment:
                         posting_account = "Income:Neon:Referrals"
                     else:
-                        posting_account = "Income:Uncategorized:Neon"
+                        posting_account = "Income:Uncategorized:Neon:Cash"
                         txn.meta["skip_transaction"] = True
                 
                 txn.postings.append(
