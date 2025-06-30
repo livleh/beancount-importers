@@ -1,0 +1,34 @@
+;; -*- mode: beancount -*-
+
+**** /Users/olileh/Coding/Livia_Code/beancount-importers/beancount_import_data/revolut_chf/account-statement_2024-03-19_2024-12-31_en_ca3e31.csv
+
+2024-03-19 * "Apple Pay Top-Up by *7676" "Apple Pay Top-Up by *7676"
+  skip_transaction: TRUE
+  Assets:Revolut:Cash            15.00 CHF
+  Income:Uncategorized:Revolut  -15.00 CHF
+
+2024-07-12 * "Apple Pay Top-Up by *7676" "Apple Pay Top-Up by *7676"
+  skip_transaction: TRUE
+  Assets:Revolut:Cash            14.83 CHF
+  Income:Uncategorized:Revolut  -14.83 CHF
+
+2024-07-12 * "RealDebrid" "RealDebrid"
+  Assets:Revolut:Cash  -15.65 CHF
+  Expenses:FIXME        15.65 CHF
+
+2024-10-02 * "Too Good To Go" "Too Good To Go"
+  Assets:Revolut:Cash  -4.90 CHF
+  Expenses:FIXME        4.90 CHF
+
+2024-10-02 * "Too Good To Go" "Too Good To Go"
+  Assets:Revolut:Cash  -2.90 CHF
+  Expenses:FIXME        2.90 CHF
+
+2024-12-27 * "Exchange to CHF" "Exchange to CHF"
+  skip_transaction: TRUE
+  Assets:Revolut:Cash            0.17 CHF
+  Income:Uncategorized:Revolut  -0.17 CHF
+
+2024-12-28 balance Assets:Revolut:Cash                             11.45 CHF
+
+

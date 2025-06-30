@@ -11,6 +11,7 @@ from uabean.importers import binance, ibkr, kraken, monobank
 import beancount_importers.import_monzo as import_monzo
 import beancount_importers.import_revolut as import_revolut
 import beancount_importers.import_wise as import_wise
+import beancount_importers.import_neon as import_neon
 
 
 def get_importer_config(type, account, currency, importer_params):
@@ -40,6 +41,17 @@ def get_importer_config(type, account, currency, importer_params):
             module="beancount_import.source.generic_importer_source_beangulp",
             importer=import_revolut.get_importer(account, currency),
             emoji="💵"
+        )
+    elif type == "neon":
+        return dict(
+            **common,
+            module="beancount_import.source.generic_importer_source_beangulp",
+            importer=import_neon.NeonImporter(account, currency),
+            description=(
+                "In the app go to Profile > Account Statements "
+                "Select CSV format and download it."
+            ),
+            emoji="🏦"
         )
     elif type == "ibkr":
         return dict(
@@ -202,6 +214,19 @@ def get_import_config(data_dir, output_dir):
             ],
             transactions_output=os.path.join(
                 output_dir, "revolut", "transactions.bean"
+            ),
+        ),
+        "neon": dict(
+            data_sources=[
+                dict(
+                    module="beancount_import.source.generic_importer_source_beangulp",
+                    importer=import_neon.NeonImporter("Assets:Neon:Cash", "CHF"),
+                    account="Assets:Neon:Cash",
+                    directory=os.path.join(data_dir, "neon"),
+                )
+            ],
+            transactions_output=os.path.join(
+                output_dir, "neon", "transactions.bean"
             ),
         ),
         "ibkr": dict(

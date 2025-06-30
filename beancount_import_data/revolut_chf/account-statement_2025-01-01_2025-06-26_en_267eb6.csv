@@ -1,0 +1,7 @@
+Type,Product,Started Date,Completed Date,Description,Amount,Fee,Currency,State,Balance
+CARD_PAYMENT,Current,2025-01-03 21:52:02,2025-01-04 15:48:40,Too Good To Go,-2.90,0.00,CHF,COMPLETED,8.55
+EXCHANGE,Current,2025-01-28 16:26:50,2025-01-28 16:26:50,Exchange to CHF,4.84,1.99,CHF,COMPLETED,11.40
+CARD_PAYMENT,Current,2025-01-28 16:05:53,2025-01-29 14:06:48,Too Good To Go,-5.90,0.00,CHF,COMPLETED,5.50
+CARD_PAYMENT,Current,2025-03-07 23:41:20,2025-03-08 12:50:05,RealDebrid,-3.82,0.04,CHF,COMPLETED,1.64
+TRANSFER,Current,2025-06-07 13:20:23,2025-06-07 13:20:23,Balance migration to another region or legal entity,-1.64,0.00,CHF,COMPLETED,0.00
+TRANSFER,Current,2025-06-07 13:20:23,2025-06-07 13:20:23,Balance migration to another region or legal entity,1.64,0.00,CHF,COMPLETED,1.64
