@@ -1,0 +1,9 @@
+Transaction date,Description,Merchant,Card number,Currency,Amount,Foreign Currency,Amount in foreign currency,Debit/Credit,Status,Merchant Category,Registered Category
+"11.04.2024","COOP-1098 ZH SCHEFFELSTR., ZÜRICH","Coop","3776 60**** *2492","CHF","5.50","","","Debit","Posted","Groceries","DEPARTMENT STORES"
+"11.04.2024","PAYMENT SOLUTION & SER, STEFFISBURG","Payment Solution & Service","5100 21** **** 5787","CHF","100.00","","","Debit","Posted","Food and Drink","EATING PLACES, RESTAURANTS"
+"09.04.2024","YALLO MEIN PORTAL, GLATTPARK","yallo","3776 60**** *2492","CHF","24.15","","","Debit","Posted","Family and Household","CATALOG MERCHANTS"
+"08.04.2024","UZH ZENTRUM, ZÜRICH","Universität Zürich","3776 60**** *2492","CHF","7.50","","","Debit","Posted","Services","EATING PLACES, RESTAURANTS"
+"05.04.2024","COOP-1098 ZH SCHEFFELSTR., ZÜRICH","Coop","3776 60**** *2492","CHF","17.55","","","Debit","Posted","Groceries","DEPARTMENT STORES"
+"04.04.2024","MENSA UZH IRCHEL, ZÜRICH","Mensa UZH Irchel","3776 60**** *2492","CHF","6.10","","","Debit","Posted","Food and Drink","EATING PLACES, RESTAURANTS"
+"04.04.2024","DENNER DISCOUNT 498, ZÜRICH","Denner","3776 60**** *2492","CHF","14.00","","","Debit","Posted","Groceries","DEPARTMENT STORES"
+"03.04.2024","YALLO MEIN PORTAL, GLATTPARK","yallo","3776 60**** *2492","CHF","25.95","","","Debit","Posted","Family and Household","CATALOG MERCHANTS"

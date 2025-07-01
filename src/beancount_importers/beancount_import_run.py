@@ -12,6 +12,7 @@ import beancount_importers.import_monzo as import_monzo
 import beancount_importers.import_revolut as import_revolut
 import beancount_importers.import_wise as import_wise
 import beancount_importers.import_neon as import_neon
+import beancount_importers.import_swisscard as import_swisscard
 
 
 def get_importer_config(type, account, currency, importer_params):
@@ -52,6 +53,16 @@ def get_importer_config(type, account, currency, importer_params):
                 "Select CSV format and download it."
             ),
             emoji="🏦"
+        )
+    elif type == "swisscard":
+        return dict(
+            **common,
+            module="beancount_import.source.generic_importer_source_beangulp",
+            importer=import_swisscard.get_importer(account),
+            description=(
+                "Import Swisscard’s Cashback Cards <https://www.cashback-cards.ch/> transactions from a CSV export."
+            ),
+            emoji="💳"
         )
     elif type == "ibkr":
         return dict(
@@ -227,6 +238,19 @@ def get_import_config(data_dir, output_dir):
             ],
             transactions_output=os.path.join(
                 output_dir, "neon", "transactions.bean"
+            ),
+        ),
+        "swisscard": dict(
+            data_sources=[
+                dict(
+                    module="beancount_import.source.generic_importer_source_beangulp",
+                    importer=import_swisscard.get_importer("Assets:CashBackCard:Cash"),
+                    account="Assets:CashBackCard:Cash",
+                    directory=os.path.join(data_dir, "swisscard"),
+                )
+            ],
+            transactions_output=os.path.join(
+                output_dir, "swisscard", "transactions.bean"
             ),
         ),
         "ibkr": dict(
